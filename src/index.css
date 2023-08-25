@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+  backface-visibility: hidden;
+}
+
+/* tailwind styles */
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  background: rgba(183, 240, 235, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+img {
+  @apply w-full block;
+}
+
+body {
+  @apply font-heading;
+}
+
+input,
+textarea,
+button {
+  @apply outline-none bg-none border-0 bg-transparent;
+}
+
+.container {
+  @apply my-0 mx-auto px-4 w-full lg:w-[95%];
+}
+
+.linear {
+  @apply flex flex-col;
+}
+
+.wht-text {
+  @apply text-white opacity-60 font-medium;
+}
+
+.space-sty {
+  @apply flex items-center justify-between;
+}
+
+.flex-box {
+  @apply flex items-center justify-center;
+}
+
+:root {
+  /* --green: #008c36; */
+  /* --bg-white: #f5f5f5; */
+  /* --black: #010603; */
+  /* --light-black: #3c3c3b; */
+  /* --white: #ffffff; */
+  /* --gray: #f9f9f9; */
+}
+
+.click_btn {
+  /* @apply bg-green text-white text-sm font-normal  */
+  /* hover:text-green hover:bg-transparent transition duration-300 border-solid border border-green; */
+}
+
+.inputs {
+  /* @apply bg-cream flex w-full py-3.5 px-7 rounded-md text-sm text-[#4D4D4D] border-solid border border-[#CECECE] focus:outline-none focus:border-green  focus:border-solid focus:border; */
+}
+
+.detail_text {
+  /* @apply w-1/3 text-xs font-normal text-[#949494] md:w-2/12 md:text-sm; */
+}
+.detail_value {
+  /* @apply w-2/3 text-xs font-medium text-black md:text-sm; */
+}
+
+.subText_sty {
+  /* @apply text-white font-light text-xs leading-[27px]; */
+}
+
+.user_search {
+  /* @apply bg-white border-solid border border-[#d3d3d3] text-sm py-2 px-5 text-[#898a8d] rounded md:w-2/3; */
+}
+
+.dropdown {
+  /* @apply relative w-[100px] text-center flex items-center justify-center select-none md:w-[200px]; */
+}
+.dropdown_btn {
+  /* @apply flex px-4 py-2 bg-[#f9f9f9] z-10 rounded  cursor-pointer text-green items-center justify-between md:py-3 md:px-5; */
+}
+/* z-10 */
+.select_text {
+  /* @apply hidden md:flex md:font-semibold  md:mr-3; */
+}
+.select-icon {
+  /* @apply text-base md:text-2xl; */
+}
+
+.dropdown_content {
+  /* @apply absolute bg-[#f9f9f9] items-start justify-start z-20  rounded w-[150%]  cursor-pointer text-green top-[150%] p-[6px] mr-10 md:p-[15px] md:w-full; */
+}
+
+.dropdown_item {
+  /* @apply p-[10px] cursor-pointer; */
+}
+.new_search {
+  /* @apply bg-white border-solid border border-[#d3d3d3] text-sm py-2 px-5 text-[#898a8d] rounded lg:w-[40%]; */
+}
+
+/* extras */
+
+/* animations */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fade-in {
+  animation: fade-in 0.2s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+
+.slide-in {
+  animation: slide-in 0.2s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+
+.footer_input input::placeholder {
+  /* color: #ffffff; */
+}

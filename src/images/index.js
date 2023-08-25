@@ -1,0 +1,9 @@
+export { default as Laptop } from "./Laptop.png";
+export { default as hero } from "./hero.png";
+export { default as Diamond } from "./Diamond.png";
+export { default as Desktop } from "./Desktop.png";
+export { default as Grid_one } from "./Grid_one.png";
+export { default as Grid_two } from "./Grid_two.png";
+export { default as Grid_three } from "./Grid_three.png";
+export { default as Grid_four } from "./Grid_four.png";
+export { default as Logo } from "./Logo.svg";
