@@ -1,3 +1,5 @@
+import { Logo } from "../images";
+
 function ContactUs() {
   return (
     <section className="my-12 mx-4 md:my-20">
@@ -5,12 +7,7 @@ function ContactUs() {
         className=" py-6 relative  md:max-w-[570px] my-0 mx-auto border-b rounded-xl"
         style={{ border: "2px solid #5CA3E2" }}
       >
-        <div
-          className="top-[0px] absolute text-2xl px-4 bg-backgr tranf-center "
-          style={{
-            backgroundColor: "white",
-          }}
-        >
+        <div className="top-[-30px] absolute text-xl text-thickLightBlue px-4 tranf-center ">
           Contact us
         </div>
 
