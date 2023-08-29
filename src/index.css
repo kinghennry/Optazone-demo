@@ -14,7 +14,6 @@ html {
 
 body {
   background: rgba(183, 240, 235, 0.2);
-
   backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(8.5px);
 }
